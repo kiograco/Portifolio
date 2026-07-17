@@ -89,23 +89,26 @@ const experience = [
   {
     role: "Founder & Lead Software Engineer",
     company: "NCProgrammers",
-    period: "2021–presente",
-    description: "Desenvolvimento de produtos SaaS de ponta a ponta — do back-end ao front-end, incluindo arquitetura, testes e deploy.",
-    tech: ["Java", "TypeScript", "JavaScript", "Node.js", "Cypress"],
+    period: "ago 2021 – presente",
+    description:
+      "Desenvolvimento de aplicações web e plataformas SaaS para clientes nacionais e internacionais, participando de todo o ciclo de vida do software — do planejamento e arquitetura ao deploy, manutenção e evolução contínua. Criação de CRMs corporativos com ordens de serviço, agendamento, financeiro, automações e integrações com terceiros, e de uma plataforma para psicólogos e psiquiatras com busca por geolocalização, agendamento online e integração com WhatsApp. APIs REST com autenticação JWT, processamento de pagamentos e bancos PostgreSQL/MySQL com foco em performance e escalabilidade.",
+    tech: ["React", "TypeScript", "Node.js", "PHP", "Python", "PostgreSQL", "Docker"],
   },
   {
     role: "Full Stack Support Engineer",
     company: "Proesc (SaaS educacional)",
-    period: null,
-    description: "Sustentação crítica e evolução de um SaaS educacional em produção.",
+    period: "out 2025 – mai 2026",
+    description:
+      "Sustentação e evolução contínua de uma plataforma SaaS educacional usada por diversas instituições de ensino: resolução de incidentes críticos em produção, investigação e diagnóstico de causa raiz de falhas, e melhoria da confiabilidade, disponibilidade e estabilidade do sistema em colaboração com times multidisciplinares.",
     tech: ["PHP", "Laravel"],
   },
   {
-    role: "Desenvolvedor",
+    role: "Desenvolvedor de Software",
     company: "Geosapiens",
-    period: null,
-    description: "Desenvolvimento front-end com testes end-to-end automatizados.",
-    tech: ["PHP", "Tailwind", "Cypress", "Selenium", "Playwright"],
+    period: "abr 2021 – abr 2023",
+    description:
+      "Desenvolvimento e manutenção de testes automatizados end-to-end com Cypress e CodeceptJS, garantindo qualidade e confiabilidade das aplicações. Construção de interfaces web em React (JavaScript e TypeScript), manutenção de aplicações Angular e testes unitários com Jest, em times ágeis com Scrum e entrega contínua.",
+    tech: ["React", "TypeScript", "Angular", "Cypress", "Jest"],
   },
 ];
 
