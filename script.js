@@ -50,8 +50,9 @@ const projects = [
     description:
       "Este próprio site. Single page desenvolvida para expor meus projetos, consumindo um array central com as informações de cada um e gerando os cards dinamicamente — o design do site é, em si, uma amostra do meu trabalho front-end.",
     tech: ["JavaScript", "HTML5", "CSS3"],
-    demoUrl: null,
-    repoUrl: "https://github.com/kiograco/portfolio",
+    demoUrl: "https://portifolio-kiograco.vercel.app",
+    repoUrl: "https://github.com/kiograco/Portifolio",
+    preview: "assets/og/og-image.jpg",
   },
 ];
 
