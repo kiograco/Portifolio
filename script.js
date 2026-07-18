@@ -46,13 +46,12 @@ const projects = [
     preview: "assets/previews/sitepsi.jpg",
   },
   {
-    title: "PORTFÓLIO",
+    title: "MINHOCA NO BURACO",
     description:
-      "Este próprio site. Single page desenvolvida para expor meus projetos, consumindo um array central com as informações de cada um e gerando os cards dinamicamente — o design do site é, em si, uma amostra do meu trabalho front-end.",
-    tech: ["JavaScript", "HTML5", "CSS3"],
-    demoUrl: "https://portifolio-kiograco.vercel.app",
-    repoUrl: "https://github.com/kiograco/Portifolio",
-    preview: "assets/og/og-image.jpg",
+      "Simulação desktop em Delphi VCL do clássico problema da minhoca que sobe e cai até sair de um buraco. Lógica da simulação isolada da interface (sem nenhuma dependência de VCL) e coberta por testes automatizados com DUnitX, incluindo geração de relatório no formato NUnit para uso em pipelines de CI.",
+    tech: ["Delphi"],
+    demoUrl: null,
+    repoUrl: "https://github.com/kiograco/Teste-Delphi-minhoca",
   },
 ];
 
@@ -83,6 +82,7 @@ const TECH_ICON_SLUGS = {
   Playwright: "playwright/playwright-original",
   Cypress: "cypressio/cypressio-original",
   Jest: "jest/jest-plain",
+  Delphi: "delphi/delphi-original",
 };
 
 // Central data source — experience list below is generated from this array.

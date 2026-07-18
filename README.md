@@ -1,4 +1,4 @@
-### 👋 Olá, eu sou o Caio
+### Olá, eu sou o Caio
 
 Eterno estudante, construindo produtos SaaS de ponta a ponta — back-end, front-end e infra. Baseado em Natal-RN.
 
@@ -11,6 +11,7 @@ Gosto de projetos que resolvem um problema de negócio real: multiempresa, pagam
 - **[Multi-Loja-SaaS](https://github.com/kiograco/Multi-Loja-SaaS)** — plataforma SaaS multi-loja de gestão de pedidos em PHP 8.3, com arquitetura hexagonal, Event Sourcing e CQRS. `PHP 8.3`
 - **[SaaS-Controle_Financeiro](https://github.com/kiograco/SaaS-Controle_Financeiro)** — sistema multiempresa de gestão financeira e ponto. `Java 21 · Spring Boot 3 · Angular 18`
 - **[site.psi](https://github.com/kiograco/site.psi)** — landing page para cliente real. `React · Vite`
+- **[Teste-Delphi-minhoca](https://github.com/kiograco/Teste-Delphi-minhoca)** — simulação desktop em Delphi VCL, com lógica isolada da interface e testes automatizados via DUnitX. `Delphi`
 
 #### 🛠️ Stack
 
