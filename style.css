@@ -361,6 +361,9 @@ a {
   aspect-ratio: 16 / 10;
   background: #e9e9ef;
   overflow: hidden;
+  margin: 16px 16px 0;
+  border: 1px solid #dfe0ea;
+  border-radius: 6px;
 }
 .card-image-wrap img {
   width: 100%;
