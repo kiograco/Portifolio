@@ -82,7 +82,7 @@ const TECH_ICON_SLUGS = {
   Selenium: "selenium/selenium-original",
   Playwright: "playwright/playwright-original",
   Cypress: "cypressio/cypressio-original",
-  Jest: "jest/jest-plain-colored",
+  Jest: "jest/jest-plain",
 };
 
 // Central data source — experience list below is generated from this array.
