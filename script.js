@@ -10,13 +10,13 @@ const projects = [
     preview: "assets/previews/mentesa.jpg",
   },
   {
-    title: "NCPROGRAMMERS CRM",
+    title: "DELIVERY TRACKER",
     description:
-      "CRM de atendimento multicanal (WhatsApp, Telegram, Instagram e Messenger) com gestão de contatos, filas e etiquetas, chatbot visual, ordens de serviço com agenda e PDF, controle de estoque com baixa automática, painel de superadmin multi-empresa e assinaturas pagas via Asaas (Pix e cartão).",
-    tech: ["Node.js", "Vue", "PostgreSQL", "Docker"],
-    demoUrl: "https://gestao-de-clientes-khaki.vercel.app",
-    repoUrl: "https://github.com/kiograco/GestaoDeClientes",
-    preview: "assets/previews/gestaodeclientes-arch.jpg",
+      "Plataforma SaaS de gestão de entregas em tempo real: API em Ruby on Rails 8 (PostgreSQL/PostGIS, Redis, Sidekiq), painel admin em React com mapa ao vivo via ActionCable (Leaflet) — posição do motorista, rota, velocidade e ETA sem polling — e app do motorista em Expo/React Native com GPS em tempo real, aceite de entregas e comprovante por foto. Autenticação JWT com refresh rotativo, relatórios em CSV/PDF, notificações, trilha de auditoria, OpenAPI/Swagger e 99% de cobertura de testes (RSpec) com CI.",
+    tech: ["Ruby", "Rails", "React", "TypeScript", "PostgreSQL", "Redis", "Docker"],
+    demoUrl: null,
+    repoUrl: "https://github.com/kiograco/Delivery-Tracker",
+    preview: "assets/previews/deliverytracker.jpg",
   },
   {
     title: "ORDERHUB",
@@ -26,6 +26,15 @@ const projects = [
     demoUrl: null,
     repoUrl: "https://github.com/kiograco/Multi-Loja-SaaS",
     preview: "assets/previews/orderhub.jpg",
+  },
+  {
+    title: "NCPROGRAMMERS CRM",
+    description:
+      "CRM de atendimento multicanal (WhatsApp, Telegram, Instagram e Messenger) com gestão de contatos, filas e etiquetas, chatbot visual, ordens de serviço com agenda e PDF, controle de estoque com baixa automática, painel de superadmin multi-empresa e assinaturas pagas via Asaas (Pix e cartão).",
+    tech: ["Node.js", "Vue", "PostgreSQL", "Docker"],
+    demoUrl: "https://gestao-de-clientes-khaki.vercel.app",
+    repoUrl: "https://github.com/kiograco/GestaoDeClientes",
+    preview: "assets/previews/gestaodeclientes-arch.jpg",
   },
   {
     title: "SAAS CONTROLE FINANCEIRO",
@@ -44,15 +53,6 @@ const projects = [
     demoUrl: "https://site-psi-tau.vercel.app",
     repoUrl: "https://github.com/kiograco/site.psi",
     preview: "assets/previews/sitepsi.jpg",
-  },
-  {
-    title: "DELIVERY TRACKER",
-    description:
-      "Plataforma SaaS de gestão de entregas em tempo real: API em Ruby on Rails 8 (PostgreSQL/PostGIS, Redis, Sidekiq), painel admin em React com mapa ao vivo via ActionCable (Leaflet) — posição do motorista, rota, velocidade e ETA sem polling — e app do motorista em Expo/React Native com GPS em tempo real, aceite de entregas e comprovante por foto. Autenticação JWT com refresh rotativo, relatórios em CSV/PDF, notificações, trilha de auditoria, OpenAPI/Swagger e 99% de cobertura de testes (RSpec) com CI.",
-    tech: ["Ruby", "Rails", "React", "TypeScript", "PostgreSQL", "Redis", "Docker"],
-    demoUrl: null,
-    repoUrl: "https://github.com/kiograco/Delivery-Tracker",
-    preview: "assets/previews/deliverytracker.jpg",
   },
   {
     title: "MINHOCA NO BURACO",
@@ -301,5 +301,64 @@ function renderProjects() {
   grid.appendChild(fragment);
 }
 
+function setupCarousel() {
+  const track = document.getElementById("cardsGrid");
+  const prevBtn = document.getElementById("carouselPrev");
+  const nextBtn = document.getElementById("carouselNext");
+  const dotsWrap = document.getElementById("carouselDots");
+  if (!track || !prevBtn || !nextBtn || !dotsWrap) return;
+
+  function pageCount() {
+    return Math.max(1, Math.round(track.scrollWidth / track.clientWidth));
+  }
+
+  function currentPage() {
+    return Math.round(track.scrollLeft / track.clientWidth);
+  }
+
+  function buildDots() {
+    dotsWrap.innerHTML = "";
+    for (let i = 0; i < pageCount(); i++) {
+      const dot = document.createElement("button");
+      dot.className = "dot";
+      dot.setAttribute("aria-label", `Ir para a página ${i + 1} de projetos`);
+      dot.addEventListener("click", () => {
+        track.scrollTo({ left: i * track.clientWidth, behavior: "smooth" });
+      });
+      dotsWrap.appendChild(dot);
+    }
+    updateDots();
+  }
+
+  function updateDots() {
+    const page = currentPage();
+    dotsWrap.querySelectorAll(".dot").forEach((dot, i) => {
+      dot.classList.toggle("active", i === page);
+    });
+  }
+
+  prevBtn.addEventListener("click", () => {
+    track.scrollBy({ left: -track.clientWidth, behavior: "smooth" });
+  });
+  nextBtn.addEventListener("click", () => {
+    track.scrollBy({ left: track.clientWidth, behavior: "smooth" });
+  });
+
+  let scrollTimer;
+  track.addEventListener("scroll", () => {
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(updateDots, 80);
+  });
+
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(buildDots, 150);
+  });
+
+  buildDots();
+}
+
 renderExperience();
 renderProjects();
+setupCarousel();

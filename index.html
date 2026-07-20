@@ -84,7 +84,12 @@
 
   <section id="projetos" class="projects">
     <h2 class="section-title">PROJETOS EM DESTAQUE</h2>
-    <div class="cards-grid" id="cardsGrid"></div>
+    <div class="carousel">
+      <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Projetos anteriores">&#8249;</button>
+      <div class="cards-track" id="cardsGrid" tabindex="0" aria-label="Carrossel de projetos"></div>
+      <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Próximos projetos">&#8250;</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Páginas do carrossel"></div>
   </section>
 </main>
 
