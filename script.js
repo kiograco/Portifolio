@@ -46,6 +46,15 @@ const projects = [
     preview: "assets/previews/sitepsi.jpg",
   },
   {
+    title: "DELIVERY TRACKER",
+    description:
+      "Plataforma SaaS de gestão de entregas em tempo real: API em Ruby on Rails 8 (PostgreSQL/PostGIS, Redis, Sidekiq), painel admin em React com mapa ao vivo via ActionCable (Leaflet) — posição do motorista, rota, velocidade e ETA sem polling — e app do motorista em Expo/React Native com GPS em tempo real, aceite de entregas e comprovante por foto. Autenticação JWT com refresh rotativo, relatórios em CSV/PDF, notificações, trilha de auditoria, OpenAPI/Swagger e 99% de cobertura de testes (RSpec) com CI.",
+    tech: ["Ruby", "Rails", "React", "TypeScript", "PostgreSQL", "Redis", "Docker"],
+    demoUrl: null,
+    repoUrl: "https://github.com/kiograco/Delivery-Tracker",
+    preview: "assets/previews/deliverytracker.jpg",
+  },
+  {
     title: "MINHOCA NO BURACO",
     description:
       "Simulação desktop em Delphi VCL do clássico problema da minhoca que sobe e cai até sair de um buraco. Lógica da simulação isolada da interface (sem nenhuma dependência de VCL) e coberta por testes automatizados com DUnitX, incluindo geração de relatório no formato NUnit para uso em pipelines de CI.",
@@ -63,6 +72,8 @@ const TECH_ICON_SLUGS = {
   JavaScript: "javascript/javascript-original",
   "Node.js": "nodejs/nodejs-original",
   PHP: "php/php-original",
+  Ruby: "ruby/ruby-original",
+  Rails: "rails/rails-plain",
   Python: "python/python-original",
   Java: "java/java-original",
   "Spring Boot": "spring/spring-original",
