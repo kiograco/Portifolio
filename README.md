@@ -6,7 +6,8 @@ Gosto de projetos que resolvem um problema de negócio real: multiempresa, pagam
 
 #### 🚀 Projetos em destaque
 
-- **[MenteSa](https://github.com/kiograco/MenteSa)** — SaaS para psicólogos: agendamento, telehealth em vídeo (LiveKit), prontuário eletrônico (SOAP), resumo de sessão com IA (Gemini), pagamentos (Mercado Pago) e lembretes por WhatsApp. `React · TypeScript · Supabase`
+- **[MenteSa](https://github.com/kiograco/MenteSa)** — SaaS para psicólogos: agendamento, telehealth em vídeo (LiveKit), prontuário eletrônico (SOAP), resumo de sessão com IA (Gemini), pagamentos via Asaas (Pix e cartão) e lembretes por WhatsApp. `React · TypeScript · Supabase`
+- **[Delivery-Tracker](https://github.com/kiograco/Delivery-Tracker)** — plataforma de gestão de entregas em tempo real: API Rails 8, painel React com mapa ao vivo (ActionCable) e app do motorista em Expo. 99% de cobertura de testes. `Ruby on Rails · React · Expo`
 - **[GestaoDeClientes](https://github.com/kiograco/GestaoDeClientes)** — CRM de atendimento multicanal (WhatsApp, Instagram, Telegram, Messenger), com ordens de serviço, controle de estoque e assinaturas via Asaas. `Node · Vue/Quasar`
 - **[Multi-Loja-SaaS](https://github.com/kiograco/Multi-Loja-SaaS)** — plataforma SaaS multi-loja de gestão de pedidos em PHP 8.3, com arquitetura hexagonal, Event Sourcing e CQRS. `PHP 8.3`
 - **[SaaS-Controle_Financeiro](https://github.com/kiograco/SaaS-Controle_Financeiro)** — sistema multiempresa de gestão financeira e ponto. `Java 21 · Spring Boot 3 · Angular 18`
