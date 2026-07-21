@@ -3,7 +3,7 @@ const projects = [
   {
     title: "MENTESA · MINDCARE",
     description:
-      "SaaS que conecta psicólogos e psiquiatras a pacientes (publicado como MindCare), cobrindo o fluxo clínico e de negócio de ponta a ponta: diretório de profissionais verificados, agendamento com Google Agenda, telehealth por vídeo (LiveKit), prontuário eletrônico em formato SOAP com assinatura digital, resumo de sessão com IA (Google Gemini), pagamentos reais (Mercado Pago, Pix) e lembretes por WhatsApp.",
+      "SaaS que conecta psicólogos e psiquiatras a pacientes (publicado como MindCare), cobrindo o fluxo clínico e de negócio de ponta a ponta: diretório de profissionais verificados, agendamento com Google Agenda, telehealth por vídeo (LiveKit), prontuário eletrônico em formato SOAP com assinatura digital, resumo de sessão com IA (Google Gemini), pagamentos reais via Asaas (Pix e cartão) e lembretes por WhatsApp.",
     tech: ["React", "TypeScript", "Supabase", "Tailwind"],
     demoUrl: "https://mente-sa-woad.vercel.app",
     repoUrl: "https://github.com/kiograco/MenteSa",
